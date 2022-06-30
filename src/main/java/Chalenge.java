@@ -7,6 +7,7 @@ public class Chalenge {
         //System.out.println("A palavra contém a combinação? " + (ChalengeOne.wordEntry() ? "Sim" : "Não"));
 //        ChalengeTwo.entryValuesLists();
 //        ChalengeOne.chalengeOneWithStack();
-        ChalengeThree.sumNumbers();
+//        ChalengeThree.sumNumbers();
+        ChalengeFour.joinArrays();
     }
 }
