@@ -29,14 +29,14 @@ public class ChalengeFour {
         quickSort(array2, 0, (MAX_SIZE_ARRAY*2-1));
 
         int index = 0;
-        System.out.printf("[");
+        System.out.print("[");
         while(index < MAX_SIZE_ARRAY*2){
             System.out.printf("%d", array2[index]);
             if(index < MAX_SIZE_ARRAY*2-1)
                 System.out.print(", ");
             index++;
         }
-        System.out.printf("]");
+        System.out.print("]");
     }
 
     private static int defineSizeArrays() {

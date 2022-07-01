@@ -8,6 +8,7 @@ public class Chalenge {
 //        ChalengeTwo.entryValuesLists();
 //        ChalengeOne.chalengeOneWithStack();
 //        ChalengeThree.sumNumbers();
-        ChalengeFour.joinArrays();
+//        ChalengeFour.joinArrays();
+        ChalengeFive.convertionMenu();
     }
 }
