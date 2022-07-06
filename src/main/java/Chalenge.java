@@ -9,6 +9,8 @@ public class Chalenge {
 //        ChalengeOne.chalengeOneWithStack();
 //        ChalengeThree.sumNumbers();
 //        ChalengeFour.joinArrays();
-        ChalengeFive.convertionMenu();
+//        ChalengeFive.convertionMenu();
+        ChalengeSeven chalengeSeven = new ChalengeSeven();
+        chalengeSeven.choiceType();
     }
 }

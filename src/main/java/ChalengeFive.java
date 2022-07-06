@@ -50,13 +50,13 @@ public class ChalengeFive {
 
     public static BigDecimal convertion(currencies currencies){
         switch (currencies){
-            case AUD -> { return new BigDecimal(3.61); }
-            case BRL -> { return new BigDecimal(1.00); }
-            case CNY -> { return new BigDecimal(0.79); }
-            case EUR -> { return new BigDecimal(5.52); }
-            case GBP -> { return new BigDecimal(6.39); }
-            case RUB -> { return new BigDecimal(0.095); }
-            case USD -> { return new BigDecimal(5.31); }
+            case AUD -> { return new BigDecimal("3.61"); }
+            case BRL -> { return new BigDecimal("1.00"); }
+            case CNY -> { return new BigDecimal("0.79"); }
+            case EUR -> { return new BigDecimal("5.52"); }
+            case GBP -> { return new BigDecimal("6.39"); }
+            case RUB -> { return new BigDecimal("0.095"); }
+            case USD -> { return new BigDecimal("5.31"); }
             default -> System.out.println("Moeda não registrada.");
         }
         return null;
@@ -66,7 +66,8 @@ public class ChalengeFive {
         Scanner scanner = new Scanner(System.in);
         System.out.print("/// CONVERSÃO DE MOEDAS ///\n\n\n");
 
-        System.out.println("AUD (Dólar Australiano),\n" +
+        System.out.println("\n" +
+                "        AUD (Dólar Australiano),\n" +
                 "        BRL (Real)\n" +
                 "        CNY (Iuane Chinês)\n" +
                 "        EUR (Euro)\n" +
@@ -111,6 +112,5 @@ public class ChalengeFive {
 
             System.out.println(currencyIn + " - " + currencyOut + ": " + value);
         }
-
     }
 }
