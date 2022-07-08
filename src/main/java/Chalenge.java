@@ -1,3 +1,5 @@
+import ChalengeEight.ChalengeEight;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
@@ -10,7 +12,9 @@ public class Chalenge {
 //        ChalengeThree.sumNumbers();
 //        ChalengeFour.joinArrays();
 //        ChalengeFive.convertionMenu();
-        ChalengeSeven chalengeSeven = new ChalengeSeven();
-        chalengeSeven.choiceType();
+//        ChalengeSeven chalengeSeven = new ChalengeSeven();
+//        chalengeSeven.choiceType();
+        ChalengeEight chalengeEight = new ChalengeEight();
+        chalengeEight.retornarProduto();
     }
 }

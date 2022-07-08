@@ -15,6 +15,7 @@ public class ChalengeSeven {
         int choice = 0;
 
         while (choice != 5){
+            System.out.print("Nº -> ");
             choice = scanner.nextInt();
             sendEMail(emailBody, choice);
         }
@@ -25,16 +26,18 @@ public class ChalengeSeven {
             case 1 -> System.out.println(emailBody.toUpperCase());
             case 2 -> System.out.println(emailBody.toLowerCase());
             case 3 -> toCamelCase(emailBody);
-            case 4 -> System.out.println(Normalizer.normalize(emailBody, Normalizer.Form.NFD).replaceAll("[^\\p{ASCII}]", ""));
+            case 4 -> System.out.println(Normalizer
+                        .normalize(emailBody, Normalizer.Form.NFD)
+                        .replaceAll("[^\\p{ASCII}]", ""));
             default -> { System.out.println("Entrada inválida"); choiceType(); }
         }
     }
 
     public static void toCamelCase(String emailBody){
         char[] arrayEmail = emailBody.toCharArray();
-        String emailCameled = "";
+        StringBuilder emailCameled = new StringBuilder();
 
-        for (int i=0;i<arrayEmail.length;i++) {
+        for (int i=0;i<arrayEmail.length-1;i++) {
             String letter = String.valueOf(arrayEmail[i]);
 
             if(i==0){
@@ -42,13 +45,13 @@ public class ChalengeSeven {
             }
 
             if (letter.isBlank()) {
-                //letter.replaceFirst(".", "");
+                letter.replace(" ", "");
                 if(!String.valueOf(arrayEmail[i+1]).isBlank()){
                     letter = String.valueOf(arrayEmail[i+1]).toUpperCase();
                     arrayEmail[i] = arrayEmail[i+1];
                 }
             }
-            emailCameled = emailCameled + letter;
+            emailCameled.append(letter);
         }
         System.out.println(emailCameled);
     }
