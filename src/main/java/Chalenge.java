@@ -1,4 +1,5 @@
 import ChalengeEight.ChalengeEight;
+import chalengeNine.ChalengeNine;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -14,7 +15,9 @@ public class Chalenge {
 //        ChalengeFive.convertionMenu();
 //        ChalengeSeven chalengeSeven = new ChalengeSeven();
 //        chalengeSeven.choiceType();
-        ChalengeEight chalengeEight = new ChalengeEight();
-        chalengeEight.retornarProduto();
+//        ChalengeEight chalengeEight = new ChalengeEight();
+//        chalengeEight.retornarProduto();
+        ChalengeNine chalengeNine = new ChalengeNine();
+        chalengeNine.chalengeMain();
     }
 }
