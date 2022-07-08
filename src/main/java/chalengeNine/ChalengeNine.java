@@ -50,7 +50,7 @@ public class ChalengeNine implements Travel {
             if(reaches.get(from).isEmpty()){
                 return false;
             } else {
-                isReachable(reaches.get(from).stream().findFirst().get(), to, numberConnections - 1);
+                isReachable(reaches.get(from).stream().findAny().get(), to, numberConnections - 1);
             }
         }
         return false;

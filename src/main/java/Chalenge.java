@@ -17,7 +17,9 @@ public class Chalenge {
 //        chalengeSeven.choiceType();
 //        ChalengeEight chalengeEight = new ChalengeEight();
 //        chalengeEight.retornarProduto();
-        ChalengeNine chalengeNine = new ChalengeNine();
-        chalengeNine.chalengeMain();
+//        ChalengeNine chalengeNine = new ChalengeNine();
+//        chalengeNine.chalengeMain();
+        ChalengeTen chalengeTen = new ChalengeTen();
+        chalengeTen.mainChalengeTen();
     }
 }
